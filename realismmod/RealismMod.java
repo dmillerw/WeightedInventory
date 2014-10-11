@@ -22,11 +22,11 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.common.registry.TickRegistry;
 import dmillerw.mods.realismmod.client.ClientTickHandler;
 
-//@Mod( modid = "RealismMod", name="Realism Mod", version="1.0.0")
-//@NetworkMod(clientSideRequired = true, serverSideRequired = true)
+@Mod( modid = "RealismMod", name="Realism Mod", version="1.0.0")
+@NetworkMod(clientSideRequired = true, serverSideRequired = true)
 public class RealismMod {
 
-	//@SidedProxy(clientSide = "dmillerw.mods.realismmod.client.ClientProxy", serverSide = "dmillerw.mods.realismmod.CommonProxy")
+	@SidedProxy(clientSide = "dmillerw.mods.realismmod.client.ClientProxy", serverSide = "dmillerw.mods.realismmod.CommonProxy")
 	public static CommonProxy proxy;
 	public static RealismMod instance;
 	static int itemHammerID;
